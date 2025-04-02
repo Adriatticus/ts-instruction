@@ -8,8 +8,7 @@ export class Movie {
   constructor(id: number = 0, title: string = "", year: number = 0, rating: string = "", director: string = "") {
     (this.id = id), (this.title = title), (this.year = year), (this.rating = rating), (this.director = director);
   }
-}
-
-function details(): string {
-  return "this.stuff from class video";
+  details(): string {
+    return `${this.id}|${this.title}|${this.year}|${this.rating}|this.director}`;
+  }
 }
